@@ -1,172 +1,210 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Sono do Bebê – Apoio para Pais Cansados</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sono do Bebê – Noites Tranquilas</title>
 
-  <!-- Fonte elegante -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
 
   <style>
     body {
       margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: #f7f5f2;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(180deg, #fff7f2, #f5f9ff);
       color: #333;
-      line-height: 1.6;
     }
 
     header {
-      background: #ffffff;
+      background: linear-gradient(135deg, #f6b8a2, #f2d0c4);
       padding: 40px 20px;
       text-align: center;
     }
 
     header h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 32px;
+      font-size: 2.6rem;
+      color: #5a2d2d;
       margin-bottom: 10px;
-      color: #2d2d2d;
     }
 
     header p {
-      max-width: 600px;
-      margin: 0 auto;
-      font-size: 16px;
-      color: #555;
-    }
-
-    section {
-      max-width: 900px;
+      font-size: 1.1rem;
+      max-width: 700px;
       margin: auto;
-      padding: 40px 20px;
     }
 
-    .video-box {
-      background: #eae7e3;
-      border-radius: 12px;
-      padding: 40px;
-      text-align: center;
-      margin-bottom: 40px;
-      color: #777;
+    .hero {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      align-items: center;
+      gap: 30px;
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
     }
 
-    h2 {
+    .hero img {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .hero-text h2 {
       font-family: 'Playfair Display', serif;
-      font-size: 26px;
+      font-size: 2rem;
+      color: #6b3a3a;
       margin-bottom: 15px;
     }
 
-    .content p {
-      margin-bottom: 15px;
-      font-size: 16px;
+    .hero-text p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.9rem;
+      text-align: center;
+      margin-bottom: 30px;
+      color: #5a2d2d;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h4 {
+      margin-bottom: 10px;
+      color: #7a3e3e;
     }
 
     .cta {
-      background: #ffffff;
-      border-radius: 12px;
-      padding: 40px 20px;
+      background: linear-gradient(135deg, #f2b6a0, #f7d7c8);
+      padding: 60px 20px;
       text-align: center;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
     }
 
-    .cta h3 {
+    .cta h2 {
       font-family: 'Playfair Display', serif;
-      font-size: 24px;
-      margin-bottom: 15px;
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      color: #5a2d2d;
+    }
+
+    .cta p {
+      max-width: 700px;
+      margin: 0 auto 30px;
+      font-size: 1.1rem;
     }
 
     .cta a {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 16px 32px;
-      background: #b89b7a;
-      color: #ffffff;
-      text-decoration: none;
+      background: #d94c4c;
+      color: white;
+      padding: 16px 40px;
       border-radius: 50px;
-      font-size: 16px;
-      font-weight: 500;
-      transition: 0.3s;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: 600;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      transition: background 0.3s ease;
     }
 
     .cta a:hover {
-      background: #a3886a;
+      background: #b63e3e;
     }
 
     footer {
-      text-align: center;
+      background: #f5f5f5;
       padding: 30px 20px;
-      font-size: 14px;
-      color: #777;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
     }
   </style>
 </head>
-
 <body>
 
-<header>
-  <h1>Quando o bebê não dorme, toda a casa sente</h1>
-  <p>
-    Entender o sono do bebê é um passo importante para noites mais tranquilas,
-    sem culpa, sem pressão e respeitando o tempo de cada família.
-  </p>
-</header>
+  <header>
+    <h1>Sono do Bebê</h1>
+    <p>Apoio gentil e informação de qualidade para noites mais tranquilas, seguras e cheias de carinho.</p>
+  </header>
 
-<section>
+  <section class="hero">
+    <img src="https://images.unsplash.com/photo-1604014237800-1c9102c219da" alt="Mãe segurando bebê com carinho">
 
-  <!-- ESPAÇO PARA VÍDEO -->
-  <div class="video-box">
-    📹 Espaço reservado para o vídeo explicativo  
-    <br><br>
-    (Você pode inserir o vídeo aqui quando desejar)
-  </div>
+    <div class="hero-text">
+      <h2>Um caminho mais leve para o descanso do seu bebê</h2>
+      <p>
+        O sono do bebê é um dos maiores desafios da maternidade e da paternidade.
+        Aqui você encontra informações claras, acolhedoras e práticas para ajudar
+        seu bebê a dormir melhor — respeitando o tempo, a segurança e o vínculo emocional.
+      </p>
+    </div>
+  </section>
 
-  <div class="content">
-    <h2>Por que o sono do bebê parece tão difícil?</h2>
+  <section class="section">
+    <h3>O que você vai aprender</h3>
+
+    <div class="cards">
+      <div class="card">
+        <h4>🍼 Rotina e previsibilidade</h4>
+        <p>Como criar uma rotina noturna suave que transmite segurança ao bebê.</p>
+      </div>
+
+      <div class="card">
+        <h4>🌙 Ambiente ideal</h4>
+        <p>Luz, sons e temperatura adequados para favorecer um sono mais profundo.</p>
+      </div>
+
+      <div class="card">
+        <h4>🤍 Conexão emocional</h4>
+        <p>A importância do colo, do vínculo e do acolhimento no processo do sono.</p>
+      </div>
+
+      <div class="card">
+        <h4>⏳ Expectativas reais</h4>
+        <p>Entenda o desenvolvimento do sono infantil sem comparações ou pressões.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Você não está sozinha</h2>
     <p>
-      Muitos pais se sentem perdidos quando o assunto é sono infantil.
-      Rotinas quebradas, despertares frequentes e cansaço acumulado fazem parte
-      da realidade de milhares de famílias.
-    </p>
-
-    <p>
-      O que pouca gente explica é que o sono do bebê é um processo de desenvolvimento,
-      e não um comportamento que pode ser “forçado” ou comparado com outras crianças.
-    </p>
-
-    <h2>Informação traz mais segurança</h2>
-    <p>
-      Quando os pais entendem como funciona o ritmo biológico do bebê,
-      as noites deixam de ser um campo de batalha e passam a ser encaradas
-      com mais acolhimento e previsibilidade.
-    </p>
-
-    <p>
-      Ter acesso a orientações claras ajuda a reduzir a ansiedade,
-      organizar melhor a rotina e tomar decisões mais conscientes.
-    </p>
-  </div>
-
-  <div class="cta">
-    <h3>Um guia criado para apoiar, não para prometer milagres</h3>
-    <p>
-      Este material foi desenvolvido para oferecer informação,
-      acolhimento e estratégias respeitosas para o sono do bebê,
-      sempre considerando a individualidade de cada família.
+      Milhares de famílias buscam diariamente mais equilíbrio, descanso e bem-estar.
+      Ter informação correta faz toda a diferença nesse caminho.
     </p>
 
     <a href="https://pay.kiwify.com.br/3PTfXbi?afid=ei1yfAtj" target="_blank">
-      Quero conhecer o conteúdo
+      Acessar a página de compra
     </a>
-  </div>
+  </section>
 
-</section>
-
-<footer>
-  © Conteúdo informativo sobre sono do bebê.  
-  Este site não substitui orientação profissional individualizada.
-</footer>
+  <footer>
+    <p>Conteúdo informativo. Não substitui orientação médica ou profissional especializada.</p>
+  </footer>
 
 </body>
 </html>
