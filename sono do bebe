@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> 
+<head>
+  <meta charset="UTF-8">
+  <title>Sono do Bebê – Apoio para Pais Cansados</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonte elegante -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f7f5f2;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #ffffff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      margin-bottom: 10px;
+      color: #2d2d2d;
+    }
+
+    header p {
+      max-width: 600px;
+      margin: 0 auto;
+      font-size: 16px;
+      color: #555;
+    }
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .video-box {
+      background: #eae7e3;
+      border-radius: 12px;
+      padding: 40px;
+      text-align: center;
+      margin-bottom: 40px;
+      color: #777;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 26px;
+      margin-bottom: 15px;
+    }
+
+    .content p {
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+
+    .cta {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
+
+    .cta h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .cta a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 16px 32px;
+      background: #b89b7a;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 50px;
+      font-size: 16px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .cta a:hover {
+      background: #a3886a;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Quando o bebê não dorme, toda a casa sente</h1>
+  <p>
+    Entender o sono do bebê é um passo importante para noites mais tranquilas,
+    sem culpa, sem pressão e respeitando o tempo de cada família.
+  </p>
+</header>
+
+<section>
+
+  <!-- ESPAÇO PARA VÍDEO -->
+  <div class="video-box">
+    📹 Espaço reservado para o vídeo explicativo  
+    <br><br>
+    (Você pode inserir o vídeo aqui quando desejar)
+  </div>
+
+  <div class="content">
+    <h2>Por que o sono do bebê parece tão difícil?</h2>
+    <p>
+      Muitos pais se sentem perdidos quando o assunto é sono infantil.
+      Rotinas quebradas, despertares frequentes e cansaço acumulado fazem parte
+      da realidade de milhares de famílias.
+    </p>
+
+    <p>
+      O que pouca gente explica é que o sono do bebê é um processo de desenvolvimento,
+      e não um comportamento que pode ser “forçado” ou comparado com outras crianças.
+    </p>
+
+    <h2>Informação traz mais segurança</h2>
+    <p>
+      Quando os pais entendem como funciona o ritmo biológico do bebê,
+      as noites deixam de ser um campo de batalha e passam a ser encaradas
+      com mais acolhimento e previsibilidade.
+    </p>
+
+    <p>
+      Ter acesso a orientações claras ajuda a reduzir a ansiedade,
+      organizar melhor a rotina e tomar decisões mais conscientes.
+    </p>
+  </div>
+
+  <div class="cta">
+    <h3>Um guia criado para apoiar, não para prometer milagres</h3>
+    <p>
+      Este material foi desenvolvido para oferecer informação,
+      acolhimento e estratégias respeitosas para o sono do bebê,
+      sempre considerando a individualidade de cada família.
+    </p>
+
+    <a href="https://pay.kiwify.com.br/3PTfXbi?afid=ei1yfAtj" target="_blank">
+      Quero conhecer o conteúdo
+    </a>
+  </div>
+
+</section>
+
+<footer>
+  © Conteúdo informativo sobre sono do bebê.  
+  Este site não substitui orientação profissional individualizada.
+</footer>
+
+</body>
+</html>
