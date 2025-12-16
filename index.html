@@ -1,177 +1,160 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <title>Sono do Bebê</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <title>O Sono do Bebê</title>
 
-  <!-- Fontes bonitas, delicadas e imponentes -->
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Fonte bonita e imponente -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
 
   <style>
-    * { box-sizing: border-box; }
-
     body {
       margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: #fffdf6;
-      color: #3d3d3d;
+      font-family: 'Nunito', sans-serif;
+      background: #fffaf0;
+      color: #333;
     }
 
     header {
-      background: linear-gradient(180deg, #fde68a 0%, #fff7d6 100%);
-      padding: 90px 20px 70px;
+      background: linear-gradient(135deg, #ffe08a, #ffd24d);
+      padding: 60px 20px;
       text-align: center;
     }
 
     header h1 {
-      font-family: 'Baloo 2', cursive;
-      font-size: 88px;
-      line-height: 1.05;
-      margin: 0 0 20px;
-      color: #7a4a12;
-      letter-spacing: 2px;
+      font-family: 'Playfair Display', serif;
+      font-size: 64px;
+      margin: 0;
+      color: #4a3b00;
     }
 
     header p {
-      font-size: 26px;
-      max-width: 900px;
-      margin: 0 auto;
-      color: #6a4a1f;
+      font-size: 20px;
+      max-width: 700px;
+      margin: 20px auto 0;
+      color: #5c4a00;
     }
 
-    section {
-      max-width: 950px;
-      margin: 70px auto;
+    .container {
+      max-width: 1000px;
+      margin: 60px auto;
       padding: 0 20px;
     }
 
-    section h2 {
-      font-family: 'Baloo 2', cursive;
-      font-size: 48px;
-      color: #7a4a12;
-      margin-bottom: 25px;
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      margin-bottom: 50px;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
     }
 
-    section p {
-      font-size: 21px;
-      line-height: 1.8;
-      margin-bottom: 22px;
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
     }
 
-    .box {
-      background: #fff7d6;
-      border-radius: 24px;
-      padding: 40px;
-      margin-top: 40px;
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      color: #4a3b00;
     }
 
-    ul {
-      font-size: 20px;
-      line-height: 1.8;
-      padding-left: 20px;
+    p {
+      font-size: 18px;
+      line-height: 1.7;
     }
-
-    ul li { margin-bottom: 12px; }
 
     .cta {
+      margin-top: 50px;
       text-align: center;
-      margin: 90px 20px;
     }
 
     .cta a {
-      display: inline-block;
-      background: linear-gradient(135deg, #fbbf24, #facc15);
-      color: #4a2c0b;
-      font-size: 26px;
-      font-weight: 700;
-      padding: 26px 48px;
-      border-radius: 60px;
+      background: #ffbf00;
+      color: #4a3b00;
       text-decoration: none;
-      box-shadow: 0 12px 30px rgba(0,0,0,0.18);
-      transition: transform .2s ease;
+      padding: 20px 40px;
+      font-size: 20px;
+      font-weight: bold;
+      border-radius: 50px;
+      display: inline-block;
+      transition: 0.3s;
     }
 
-    .cta a:hover { transform: scale(1.06); }
+    .cta a:hover {
+      background: #f0b400;
+      transform: scale(1.05);
+    }
 
     footer {
       background: #fff1c1;
-      padding: 35px 20px;
       text-align: center;
-      font-size: 16px;
-      color: #6a5a3a;
+      padding: 30px;
+      font-size: 14px;
+      color: #6b5a00;
     }
 
     @media (max-width: 768px) {
-      header h1 { font-size: 58px; }
-      header p { font-size: 20px; }
-      section h2 { font-size: 36px; }
+      header h1 {
+        font-size: 42px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-<header>
-  <h1>O SONO DO BEBÊ</h1>
-  <p>
-    Um guia feito para mães reais, cansadas de noites intermináveis,
-    choros frequentes e da sensação de que estão sempre fazendo algo errado.
-  </p>
-</header>
-
-<section>
-  <h2>Você não está falhando como mãe</h2>
-
-  <p>
-    Se o seu bebê demora a pegar no sono, acorda várias vezes durante a noite
-    e você vive exausta, confusa e emocionalmente drenada, pare tudo por um instante.
-    <strong>Isso não significa que você é uma mãe ruim.</strong>
-  </p>
-
-  <p>
-    A verdade é simples e dura: ninguém ensina as mães a lidarem com o sono do bebê.
-    O que chega até você são palpites, julgamentos e métodos extremos que só aumentam
-    a culpa e a insegurança.
-  </p>
-
-  <div class="box">
+  <header>
+    <h1>O SONO DO BEBÊ</h1>
     <p>
-      O <strong>Sono do Bebê</strong> foi criado para oferecer orientação clara,
-      acolhedora e possível — respeitando o desenvolvimento do bebê
-      <strong>e a saúde emocional da mãe</strong>.
+      O guia que ajuda mães exaustas a transformarem noites caóticas em momentos de paz,
+      acolhimento e descanso real.
     </p>
+  </header>
+
+  <div class="container">
+
+    <!-- VÍDEO -->
+    <div class="video-wrapper">
+      <iframe 
+        src="https://www.youtube.com/embed/QYV_4ODtIew"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <h2>Você não está falhando como mãe.</h2>
+
+    <p>
+      Se o seu bebê demora a dormir, acorda várias vezes à noite e você se sente
+      emocionalmente e fisicamente esgotada, respire fundo.
+      <strong>O problema não é você.</strong>
+    </p>
+
+    <p>
+      O <strong>Sono do Bebê</strong> foi criado para mães que precisam de orientação clara,
+      acolhedora e realista para ajudar seus filhos a dormirem melhor — e finalmente
+      descansarem também.
+    </p>
+
+    <div class="cta">
+      <a href="https://pay.kiwify.com.br/3PTfXbi?afid=ei1yfAtj">
+        Quero noites tranquilas a partir de hoje
+      </a>
+    </div>
+
   </div>
-</section>
 
-<section>
-  <h2>O que você vai aprender</h2>
+  <footer>
+    © 2025 • Sono do Bebê • Conteúdo educativo e acolhedor
+  </footer>
 
-  <ul>
-    <li>Por que seu bebê acorda tanto — e quando isso é normal</li>
-    <li>Como criar uma rotina que funcione na vida real</li>
-    <li>Erros comuns que atrapalham o sono sem você perceber</li>
-    <li>Como ajudar seu bebê a dormir melhor sem métodos agressivos</li>
-    <li>Como reduzir o cansaço físico e emocional da mãe</li>
-  </ul>
-</section>
-
-<section>
-  <h2>Para quem é este guia</h2>
-
-  <p>
-    ✔ Para mães cansadas de ouvir que "é só uma fase"<br>
-    ✔ Para quem sente que vive em modo sobrevivência<br>
-    ✔ Para quem ama seu bebê, mas precisa dormir<br>
-    ✔ Para quem quer orientação sem culpa, sem gritos e sem abandono
-  </p>
-</section>
-
-<div class="cta">
-  <a href="https://pay.kiwify.com.br/3PTfXbi?afid=ei1yfAtj">
-    Quero começar hoje e dormir melhor
-  </a>
-</div>
-
-<footer>
-  © 2025 • O Sono do Bebê • Conteúdo educativo
+</body>
+</html>
