@@ -3,206 +3,206 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sono do Bebê – Guia para Noites Tranquilas</title>
+  <title>Sono do Bebê – Durma com Tranquilidade</title>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
-    :root {
-      --primary: #f2c94c; /* amarelo suave */
-      --secondary: #fff7d6; /* amarelo bem claro */
-      --accent: #7a5c00; /* marrom quente */
-      --text: #2f2f2f;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
-      font-family: 'Inter', sans-serif;
-      color: var(--text);
-      background: #fff;
-      line-height: 1.6;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(180deg, #fffaf0, #fff3cd);
+      color: #333;
     }
 
     header {
-      background: linear-gradient(135deg, var(--secondary), #ffffff);
+      background: linear-gradient(135deg, #f7d046, #ffe9a3);
       padding: 60px 20px;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-      align-items: center;
-    }
-
-    h1, h2, h3 {
-      font-family: 'Playfair Display', serif;
-      color: #1f1f1f;
-    }
-
-    h1 {
-      font-size: 42px;
-      margin-bottom: 20px;
-    }
-
-    .subtitle {
-      font-size: 18px;
-      margin-bottom: 30px;
-    }
-
-    .cta {
-      display: inline-block;
-      background: var(--primary);
-      color: #000;
-      padding: 18px 32px;
-      border-radius: 40px;
-      font-weight: 600;
-      font-size: 18px;
-      text-decoration: none;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-      transition: transform 0.2s ease;
-    }
-
-    .cta:hover {
-      transform: scale(1.05);
-    }
-
-    .hero-img img {
-      width: 100%;
-      border-radius: 20px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-    }
-
-    section {
-      padding: 80px 20px;
-    }
-
-    .info {
-      max-width: 900px;
-      margin: auto;
       text-align: center;
     }
 
-    .info h2 {
-      font-size: 36px;
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.2rem;
+      margin-bottom: 20px;
+      color: #4a3b00;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      padding: 60px 20px;
+      background: #ffffff;
+    }
+
+    .hero img {
+      max-width: 420px;
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    }
+
+    .hero-text {
+      max-width: 520px;
+    }
+
+    .hero-text h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.4rem;
       margin-bottom: 20px;
     }
 
-    .info p {
-      font-size: 18px;
+    .hero-text p {
+      font-size: 1.05rem;
+      line-height: 1.7;
       margin-bottom: 25px;
     }
 
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-      margin-top: 50px;
+    .cta-button {
+      display: inline-block;
+      background: linear-gradient(135deg, #ffb703, #ffd166);
+      color: #4a3b00;
+      font-size: 1.1rem;
+      font-weight: 600;
+      padding: 18px 32px;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      animation: pulse 2s infinite;
     }
 
-    .card {
-      background: #fff;
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    section {
+      padding: 70px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .benefits {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+
+    .benefit {
+      background: #ffffff;
       padding: 30px;
       border-radius: 20px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     }
 
-    .card h3 {
-      margin-bottom: 15px;
+    .benefit h4 {
+      margin-bottom: 10px;
+      font-size: 1.1rem;
     }
 
     .urgency {
-      background: var(--secondary);
+      background: linear-gradient(135deg, #ffe8a1, #fff3cd);
       text-align: center;
+      padding: 60px 20px;
+      margin-top: 40px;
+    }
+
+    .urgency p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 30px;
     }
 
     footer {
-      background: #f8f8f8;
+      background: #4a3b00;
+      color: #fff;
       text-align: center;
-      padding: 40px 20px;
-      font-size: 14px;
-      color: #666;
+      padding: 30px 20px;
+      font-size: 0.9rem;
     }
 
-    @media(max-width: 768px) {
-      .container {
-        grid-template-columns: 1fr;
-      }
-
-      h1 {
-        font-size: 34px;
-      }
+    footer span {
+      opacity: 0.8;
     }
+
   </style>
 </head>
 <body>
 
 <header>
-  <div class="container">
-    <div>
-      <h1>Seu bebê não dorme… e você já está exausta?</h1>
-      <p class="subtitle">
-        Noites mal dormidas afetam sua saúde, seu humor e a conexão com seu filho. 
-        Você não está falhando — você só ainda não teve a orientação certa.
-      </p>
-      <a class="cta" href="https://pay.kiwify.com.br/3PTfXbi?afid=ei1yfAtj">
-        Quero começar hoje e ter noites mais tranquilas
-      </a>
-    </div>
-
-    <div class="hero-img">
-      <!-- Substitua o link da imagem se desejar -->
-      <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf" alt="Mãe com bebê no colo" />
-    </div>
-  </div>
+  <h1>Sono do Bebê</h1>
+  <p>O guia que ajuda mães exaustas a transformarem noites caóticas em momentos de paz, acolhimento e descanso real.</p>
 </header>
 
-<section>
-  <div class="info">
-    <h2>O sono do bebê pode (e deve) ser leve e previsível</h2>
+<div class="hero">
+  <img src="https://images.unsplash.com/photo-1601933470928-cfd0e9b0b9f3" alt="Mãe com bebê no colo" />
+  <div class="hero-text">
+    <h2>Você não está falhando como mãe.</h2>
     <p>
-      Choros constantes, despertares noturnos e dificuldade para dormir não são normais quando existe rotina, ambiente e estímulos corretos.
+      Se seu bebê demora a dormir, acorda várias vezes à noite e você se sente emocionalmente e fisicamente esgotada, respire fundo.
+      <strong>O problema não é você.</strong>
     </p>
+    <p>
+      O <strong>Sono do Bebê</strong> foi criado para mães que precisam de orientação clara, acolhedora e realista para ajudar seus filhos a dormirem melhor — e finalmente descansarem.
+    </p>
+    <a class="cta-button" href="https://pay.kiwify.com.br/3PTfXbi?afid=ei1yfAtj">
+      Quero noites tranquilas a partir de hoje
+    </a>
+  </div>
+</div>
 
-    <div class="cards">
-      <div class="card">
-        <h3>😴 Rotina que funciona</h3>
-        <p>Aprenda a organizar horários e sinais de sono respeitando o desenvolvimento do seu bebê.</p>
-      </div>
-      <div class="card">
-        <h3>🤱 Menos culpa, mais segurança</h3>
-        <p>Você vai entender o que é mito e o que realmente ajuda o bebê a dormir melhor.</p>
-      </div>
-      <div class="card">
-        <h3>🌙 Noites mais longas</h3>
-        <p>Estratégias práticas para reduzir despertares noturnos sem métodos traumáticos.</p>
-      </div>
+<section>
+  <h3>O que você vai aprender</h3>
+  <div class="benefits">
+    <div class="benefit">
+      <h4>😴 Entender o sono do bebê</h4>
+      <p>Compreenda por que seu bebê acorda tanto e o que realmente influencia o sono infantil.</p>
+    </div>
+    <div class="benefit">
+      <h4>🍼 Rotinas que funcionam</h4>
+      <p>Crie rituais noturnos seguros e previsíveis que ajudam o bebê a relaxar naturalmente.</p>
+    </div>
+    <div class="benefit">
+      <h4>❤️ Mais vínculo, menos culpa</h4>
+      <p>Aprenda a acolher seu bebê sem se sentir sobrecarregada ou insegura.</p>
+    </div>
+    <div class="benefit">
+      <h4>🌙 Noites mais leves</h4>
+      <p>Reduza despertares noturnos e ganhe mais descanso para toda a família.</p>
     </div>
   </div>
 </section>
 
-<section class="urgency">
-  <div class="info">
-    <h2>Quanto tempo mais você vai sobreviver sem dormir direito?</h2>
-    <p>
-      Cada noite mal dormida se acumula. Seu cansaço é real, sua dor é válida — e existe solução.
-    </p>
-    <a class="cta" href="https://pay.kiwify.com.br/3PTfXbi?afid=ei1yfAtj">
-      Acessar agora e começar hoje mesmo
-    </a>
-  </div>
-</section>
+<div class="urgency">
+  <p>
+    Cada noite mal dormida pesa no seu corpo, na sua mente e no seu emocional.
+    <strong>Você merece descansar — e seu bebê merece noites mais tranquilas.</strong>
+  </p>
+  <a class="cta-button" href="https://pay.kiwify.com.br/3PTfXbi?afid=ei1yfAtj">
+    Garantir acesso agora e começar hoje
+  </a>
+</div>
 
 <footer>
-  <p>Conteúdo informativo. Resultados podem variar de acordo com cada bebê.</p>
+  <span>Conteúdo informativo. Resultados variam de acordo com cada bebê.</span>
 </footer>
 
 </body>
